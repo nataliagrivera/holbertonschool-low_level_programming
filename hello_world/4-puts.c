@@ -1,6 +1,7 @@
 #include <stdio.h>
 /*
- * using puts instead of print
+ * main- function to return an integer
+ * Return: the return make the value 0 
  */
 int main(void)
 {

@@ -1,4 +1,4 @@
-#include <sdio.h>
+#include <stdio.h>
 /**
  * main- collect the argument that the user provides and performs inout vaidatio
  * return: adds value do it does not return null

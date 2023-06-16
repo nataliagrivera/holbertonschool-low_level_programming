@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - collect the argument to execute.
+ * main - entry point
  *
- * return: adds value do it does not return null
+ * Return: always 0
  */
-int main()
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);

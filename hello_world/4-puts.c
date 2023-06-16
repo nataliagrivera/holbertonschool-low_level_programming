@@ -1,2 +1,2 @@
 #!/bin/bash
-fputc("Programming is like building a multilingual puzzle"
+puts "Pragramming is like building a multillingual puzzle"

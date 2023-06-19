@@ -9,6 +9,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf( %d.\n);
+	printf($n);
 	return (0);
 }

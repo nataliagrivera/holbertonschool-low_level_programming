@@ -1,15 +1,18 @@
 #include <stdio.h>
-/*main - entry point
+/**
+ * main - entry point
+ *
+ * Return: always zero
  *
  */
 int main(void)
 {
 	char alpha;
 
-	for(alpha = 'a'; alpha <= 'z'; alpha++)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 		putchar(alpha);
 
 	putchar('\n');
 
-	return(0);
+	return (0);
 }

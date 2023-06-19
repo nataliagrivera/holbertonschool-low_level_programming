@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/*main - entry point
+ *
+ */
 int main(void)
 {
 	char alpha;
@@ -8,4 +10,6 @@ int main(void)
 		putchar(alpha);
 
 	putchar('\n');
+
+	return(0);
 }

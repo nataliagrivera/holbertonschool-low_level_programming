@@ -10,9 +10,9 @@ int main(void)
 
 	int dig;
 
-	for (dig = 0; dig <= 10; dig++)
+	for (dig = 0; dig < 10; dig++)
 	{
-		putchar("%d",dig);
+		putchar(dig);
 
 	if (dig < 9)
 	{

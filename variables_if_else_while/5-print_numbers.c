@@ -9,10 +9,10 @@ int main(void)
 {
 	int single;
 
-	for (single = 0; single <= 9; single++)
-	{
-		putchar(single);
-	}
+	for (single = 0; single < 10; single++)
+		printf("%d", single);
+
 	putchar('\n');
+
 	return (0);
 }

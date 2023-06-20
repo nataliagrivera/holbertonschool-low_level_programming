@@ -1,1 +1,2 @@
-second project of third week
+#!/bin/bash
+

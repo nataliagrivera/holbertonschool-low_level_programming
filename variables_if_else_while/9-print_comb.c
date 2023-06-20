@@ -12,7 +12,7 @@ int main(void)
 
 	for (dig = 0; dig < 10; dig++)
 	{
-		putchar(dig);
+		putchar(dig + '0');
 
 	if (dig < 9)
 	{

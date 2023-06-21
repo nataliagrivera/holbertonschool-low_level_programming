@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *void - entry point
+ *print_alphabetx10 - entry point
  *
  *Return: always 0
  */

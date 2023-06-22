@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - entry point
- * 
+ *
  * @n: holds int vaue
  *
  */
@@ -20,4 +20,4 @@ int print_to_98(int n)
 		printf("%d\n", n);
 	}
 	return (n);
-}
+}i

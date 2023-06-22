@@ -1,7 +1,8 @@
-#include <stdio.c>
-#include "main.h"
+#include <stdio.h>
 /**
- *
+ * print_to_98 - entry point
+ * 
+ * @n: holds int vaue
  *
  */
 int print_to_98(int n)
@@ -18,5 +19,5 @@ int print_to_98(int n)
 			printf("%d, ", n++);
 		printf("%d\n", n);
 	}
-	
+	return (n);
 }

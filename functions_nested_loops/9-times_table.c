@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *time_table - entry point
+ *times_table - entry point
  */
 void times_table(void)
 {

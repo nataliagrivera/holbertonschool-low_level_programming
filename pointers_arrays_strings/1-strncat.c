@@ -1,10 +1,13 @@
 #include "main.h"
 /**
+ **_strncat - function that concatenates two strings
  *
+ *@dest: the first string to be added
+ *@src: string is appended at the end of dest
  *
- *
+ * Return: returns concatenated strings
  */
-char *_strncat(char *dest, char *src);
+char *_strncat(char *dest, char *src)
 {
  
 	int a; 

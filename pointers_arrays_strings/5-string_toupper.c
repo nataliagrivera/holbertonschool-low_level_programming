@@ -10,18 +10,16 @@
 
 char *string_toupper(char *b)
 {
-	int a = 0;
+	int x = 0;
 
-	while (b[a])
+	while (b[x])
 	{
-		if (b[a] >= 97 && b[a] <= 122)
+		if (b[x] >= 97 && b[x] <= 122)
 		{
-			b[a] -= 32;
+			b[x] -= 32;
 		}
-
-		a++;
+		x++;
 	}
-
 	return (b);
 }
 

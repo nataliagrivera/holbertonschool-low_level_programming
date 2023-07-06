@@ -7,11 +7,6 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int count;
-
-	for (count = 0; count < argc; count++)
-	{
 		printf("%d\n", argc - 1);
-	}
-	return (0);
+		return (0);
 }

@@ -16,7 +16,7 @@ int check(int b, int n)
 	{
 		return (-1);
 	}
-	return (check(n + 1, b));
+	return (n);
 }
 /**
  *_sqrt_recursion - returns square root of n
@@ -27,5 +27,5 @@ int check(int b, int n)
  */
 int _sqrt_recursion(int n)
 {
-	return (check(1, n));
+	return (check(0, n));
 }

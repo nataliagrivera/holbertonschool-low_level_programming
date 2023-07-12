@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
+ **_strdup - function to copy string
  *
- *
- *
+ *@str: string to be copied
+ *Return: NULL if null or pointer to copied string
  */
 char *_strdup(char *str)
 {

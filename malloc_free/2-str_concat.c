@@ -2,13 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *
- *
+ **str_concat - concatenates two strings
+ *@s1: first string to be concatenated
+ *@s2: second string to be concatenated
+ *Return: return null if null and return new string on success
  */
 
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
+	int j = 0;
 	char *p;
 	int s1_len = strlen(s1);
 	int s2_len = strlen(s2);
@@ -22,24 +25,25 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	while(i < s1_len)
-	{
-		p[i] = s1[i];
-		i++;
-	}
 
-	while(i < s2_len)
-	{
-	p[s1_len + i] = s2[i];
-	}
-
-	p = malloc(sizeof(char) * size + 1);
-
-	p[size - 1] = '\0';
+	p = malloc(sizeof(char) * size);
 
 	if (p == NULL)
 	{
 		return (NULL);
 	}
+
+	while (i < s1_len)
+	{
+		p[i] = s1[i];
+		i++;
+	}
+
+	while (j < s2_len)
+	{
+		p[i++] = s2[j];
+		j++;
+	}
+
 	return (p);
 }

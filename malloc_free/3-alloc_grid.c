@@ -24,7 +24,7 @@ if (grid == NULL)
 }
 for (i = 0; i < width; i++)
 {
-	grid[i] = malloc(sizeof(int *) * width);
+	grid[i] = malloc(sizeof(int) * width);
 }
 return (grid);
 }

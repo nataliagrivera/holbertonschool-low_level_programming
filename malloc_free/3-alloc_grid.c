@@ -16,16 +16,16 @@ if (height <= 0 || width <= 0)
 return (NULL);
 }
 
-grid = malloc(sizeof(int *) * height);
+grid = (int **)malloc(sizeof(int *) * height);
 
 if (grid == NULL)
 {
 	free(grid);
 	return (NULL);
 }
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 {
-	grid[i] = malloc(sizeof(int) * width);
+	grid[i] = (int *)malloc(sizeof(int) * width);
 	if (grid[i] == NULL)
 	{
 		free(grid[i]);

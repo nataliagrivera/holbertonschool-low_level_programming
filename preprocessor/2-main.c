@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main- input function
+ *main - input function
  *Return - always 0
  */
 int main(void)

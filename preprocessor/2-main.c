@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - input function
-:x
+ *Return: always 0 on success
  */
 int main(void)
 {

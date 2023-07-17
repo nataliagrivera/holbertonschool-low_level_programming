@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
@@ -11,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int i = 0, j = 0, size;
+	unsigned int i = 0, j = 0;
 	unsigned int s1_len;
 	unsigned int s2_len;
 
@@ -19,19 +20,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
 	s1_len = strlen(s1);
 	s2_len = strlen(s2);
-	size = s1_len + s2_len + 1;
-	if (n >= s2_len)
-		p = malloc(sizeof(char) * size);
+
+	if (n < s2_len)
+		p = malloc(sizeof(char) * (s1_len + n + 1));
 	else
-		p = malloc((s1_len + n + 1) * sizeof(char));
-	/*Validation*/
+		p = malloc(sizeof(char) * (s1_len + s2_len + 1));
+
 	if (p == NULL)
-	{
-		free(p);
 		return (NULL);
-	}
+
 	while (i < s1_len)
 	{
 		p[i] = s1[i];
@@ -42,6 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[i++] = s2[j];
 		j++;
 	}
+	p[i] = '\0';
 	return (p);
 }
 

@@ -1,90 +1,55 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
-
 /**
- * op_add - addition
- *
- * @a: variable in the operations
- *
- * @b: variable in the operations
- *
- * Return: results of operations between two variables
+ * op_add - function to sum
+ * @a: number one
+ * @b: number two
+ * Return: the result of the equation
  */
-
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
- * op_sub - subtractions
- *
- * @a: variable in the operations
- *
- * @b: variable in the operations
- *
- * Return: results of operations between two variables
+ * op_sub - function to substract
+ * @a: number one
+ * @b: number two
+ * Return: the result of the equation
  */
-
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul - multiplication
- *
- * @a: variable in the operations
- *
- * @b: variable in the operations
- *
- * Return: results of operations between two variables
+ * op_mul - function to multiple
+ * @a: number one
+ * @b: number two
+ * Return: the result of the equation
  */
-
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * op_div - division
- *
- * @a: variable in the operations
- *
- * @b: variable in the operations
- *
- * Return: results of operations between two variables
+ * op_div - funciton to divide
+ * @a: number one
+ * @b: number two
+ * Return: the result of the equation
  */
-
 int op_div(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
 	return (a / b);
 }
 
 /**
- * op_mod - modulus
- *
- * @a: variable in the operations
- *
- * @b: variable in the operations
- *
- * Return: results of operations between two variables
+ * op_mod - function for module
+ * @a: number one
+ * @b: number two
+ * Return: the result of the equation
  */
-
 int op_mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
 	return (a % b);
 }

@@ -1,5 +1,7 @@
 #include "lists.h"
-/**print_list- function that prnts allelements of a list
+
+/**
+ *print_list- function that prnts allelements of a list
  *@h: points to the start of a linked list
  *Return: number of nodes
  */
@@ -21,6 +23,6 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		count += 1;
 	}
-	return(count);
+	return (count);
 }
 
